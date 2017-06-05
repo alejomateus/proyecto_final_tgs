@@ -1,0 +1,11 @@
+
+Create table usuario (
+usur_nombre varchar(50) not null primary key,
+usur_clave varchar(50) not null ,
+usur_nombre_persona varchar (75) not null,
+usur_tipo varchar (20) not null,
+usur_clave_recup varchar (50) not null
+);
+
+insert into usuario values ('alejo.mateus.ud@gmail.com.co','40bd001563085fc35165329ea1ff5c5ecbdbbeef','Alejandro Jimenez Mateus','Administrador','40bd001563085fc35165329ea1ff5c5ecbdbbeef');
+insert into usuario values ('jeissonperez1@gmail.com','40bd001563085fc35165329ea1ff5c5ecbdbbeef','Jeisson Perez Sindicue','Administrador','40bd001563085fc35165329ea1ff5c5ecbdbbeef');
