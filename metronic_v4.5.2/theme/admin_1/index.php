@@ -270,30 +270,57 @@ if ($_SESSION['usuario'] == true) {
 
                 <!-- BEGIN CONTENT BODY -->
                 <div class="page-content">
-                    <div class="form-group">
-                                                <label class="control-label col-md-3">Por favor ingrese la </label>
-                                                <div class="col-md-3">
-                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                        <div class="input-group input-large">
-                                                            <div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
-                                                                <i class="fa fa-file fileinput-exists"></i>&nbsp;
-                                                                <span class="fileinput-filename"> </span>
-                                                            </div>
-                                                            <span class="input-group-addon btn default btn-file">
-                                                                <span class="fileinput-new"> Select file </span>
-                                                                <span class="fileinput-exists"> Change </span>
-                                                                <input type="file" name="..."  accept=".xls,.xlsx"> </span>
-                                                            <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                    Selecciona el archivo a importar:
-                    <form name="importa" method="post" action="<?php echo $PHP_SELF; ?>" enctype="multipart/form-data" >
-                        <input type="file" name="excel" />
-                        <input type='submit' name='enviar'  value="Importar"  />
-                        <input type="hidden" value="upload" name="action" />
-                    </form>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <div class="input-group input-large">
+                                    <div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
+                                        <i class="fa fa-file fileinput-exists"></i>&nbsp;
+                                        <span class="fileinput-filename"> </span>
+                                    </div>
+                                    <span class="input-group-addon btn default btn-file">
+                                        <span class="fileinput-new"> Seleccione la Base de Preguntas </span>
+                                        <span class="fileinput-exists"> Cambiar </span>
+                                        <input type="file" name="..."  accept=".xls,.xlsx"> </span>
+                                    <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Remover </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <div class="input-group input-large">
+                                    <div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
+                                        <i class="fa fa-file fileinput-exists"></i>&nbsp;
+                                        <span class="fileinput-filename"> </span>
+                                    </div>
+                                    <span class="input-group-addon btn default btn-file">
+                                        <span class="fileinput-new"> Seleccione la Base de Opciones </span>
+                                        <span class="fileinput-exists"> Cambiar </span>
+                                        <input type="file" name="..."  accept=".xls,.xlsx"> </span>
+                                    <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Remover </a>
+                                </div>
+                            </div>
+                        </div></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <div class="input-group input-large">
+                                    <div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
+                                        <i class="fa fa-file fileinput-exists"></i>&nbsp;
+                                        <span class="fileinput-filename"> </span>
+                                    </div>
+                                    <span class="input-group-addon btn default btn-file">
+                                        <span class="fileinput-new"> Seleccione la Base de Datos  </span>
+                                        <span class="fileinput-exists"> Cambiar </span>
+                                        <input type="file" name="..."  accept=".xls,.xlsx"> </span>
+                                    <a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput"> Remover </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+
+                        </div>
+                    </div>
                     <!-- CARGA LA MISMA PAGINA MANDANDO LA VARIABLE upload -->
                     <?php
                     extract($_POST);
@@ -367,6 +394,7 @@ if ($_SESSION['usuario'] == true) {
 
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
+                    <h3>
                     <small>Estadistica descriptiva</small>
                     </h3>
                     <!-- END PAGE TITLE-->
@@ -427,7 +455,6 @@ if ($_SESSION['usuario'] == true) {
                             </div>
                         </div>
                     </div>
-                    <div class="clearfix"></div>
                     <!-- END DASHBOARD STATS 1-->
                     <div class="row">
 
